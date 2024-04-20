@@ -1,71 +1,88 @@
 /* General body styles */
 body {
-    font-family: Arial, sans-serif; /* Ensures a clean, modern sans-serif font throughout */
-    margin: 0; /* Resets default margin */
-    padding: 0; /* Resets default padding */
-    background-color: #f4f4f4; /* Light grey background for a modern look */
-    color: #333; /* Dark grey text for readability */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Styles for the main navigation bar */
+/* Navigation bar styles */
 nav ul {
-    list-style-type: none; /* Removes bullet points from list items */
-    background-color: #333; /* Dark background for the nav bar */
+    list-style-type: none;
+    background-color: #333;
     color: white;
-    margin: 0; /* Aligns navigation bar with the edge of the page */
-    padding: 10px 0; /* Adds vertical padding inside the navigation bar */
-    text-align: center; /* Centers links within the navigation bar */
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline-block; /* Displays list items in a row */
-    position: relative; /* Needed for positioning the dropdown absolutely within the nav item */
+    display: inline-block;
+    position: relative;
 }
 
 nav ul li a {
-    color: white; /* Text color for navigation links */
-    padding: 10px 15px; /* Padding around the links for better clickability */
-    text-decoration: none; /* Removes underline from links */
-    font-weight: bold; /* Makes font bold for better visibility */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Dropdown Menu Styles */
-nav .dropdown-content {
-    display: none; /* Hides the dropdown content by default */
-    position: absolute; /* Positions the dropdown relative to its parent nav item */
-    background-color: #f9f9f9; /* Light background for dropdown items */
-    min-width: 160px; /* Minimum width of the dropdown */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Adds a subtle shadow for depth */
-    z-index: 1; /* Ensures the dropdown appears on top of other content */
+/* Dropdown menu styles */
+.nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-nav .dropdown-content a {
-    color: black; /* Text color for dropdown links */
-    padding: 12px 16px; /* Padding for dropdown items */
-    text-decoration: none; /* Removes underline */
-    display: block; /* Makes links take up the full width of the dropdown */
-    text-align: left; /* Aligns text to the left */
-    font-size: 12px; /* Smaller font size for dropdown items */
+.nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
-nav .dropdown-content a:hover {
-    background-color: #f1f1f1; /* Light grey background on hover for visibility */
+.nav .dropdown-content a:hover {
+    background-color: #f1f1f1;
 }
 
-nav .dropdown:hover .dropdown-content {
-    display: block; /* Shows the dropdown menu when hovering over the parent item */
+.nav .dropdown:hover .dropdown-content {
+    display: block;
 }
 
-nav .dropbtn:hover, nav .dropbtn:focus {
-    background-color: #555; /* Darkens the button slightly on hover/focus for feedback */
+.nav .dropbtn:hover, .nav .dropbtn:focus {
+    background-color: #555;
 }
 
 /* Container styles */
 .container {
-    max-width: 800px; /* Max width for readability */
-    margin: 20px auto; /* Centers container with a margin on the top and bottom */
-    padding: 20px; /* Padding inside the container */
-    background-color: white; /* White background for content areas */
-    border-radius: 8px; /* Rounded corners for a softer look */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Social links styles */
+.social-links a {
+    color: #333;
+    margin-right: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.social-links i {
+    margin-right: 5px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+    color: #0056b3;
 }
