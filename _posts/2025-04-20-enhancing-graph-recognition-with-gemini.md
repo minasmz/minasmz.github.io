@@ -12,6 +12,8 @@ As part of my Google Generative AI Capstone Project, I tackled an interesting ch
 
 Using Google Cloud Vertex AI, I fine-tuned Gemini 2.0 Flash to significantly improve its ability to analyze graph images and make accurate determinations about their Hamiltonicity properties.
 
+[View the full project notebook on Kaggle](https://www.kaggle.com/code/minasamizadeh/npcompeletereasoning)
+
 While modern large multimodal models like Gemini can "see" graphs as images, they often lack the specialized knowledge needed to make accurate determinations about complex properties like Hamiltonicity. This project demonstrates how fine-tuning can significantly improve model performance on specialized tasks.
 
 ## The Challenge
