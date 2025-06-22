@@ -60,8 +60,13 @@ nav .dropbtn:hover, nav .dropbtn:focus {
 }
 
 /* Container styles */
+
 .container {
-    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
@@ -69,20 +74,49 @@ nav .dropbtn:hover, nav .dropbtn:focus {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Social links styles */
+
+
+
 .social-links a {
+    display: inline-block;
+    margin: 6px 0;
     color: #333;
-    margin-right: 15px;
     font-size: 16px;
     text-decoration: none;
     vertical-align: middle;
 }
 
 .social-links i {
-    margin-right: 5px;
+    margin-right: 6px;
 }
 
 .social-links a:hover {
     text-decoration: underline;
     color: #0056b3;
 }
+
+
+.left-side, .right-side {
+    flex: 1;
+    min-width: 300px;
+}
+
+.right-side ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-side li {
+    margin: 10px 0;
+}
+
+.right-side a {
+    text-decoration: none;
+    color: #333;
+}
+
+.right-side a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
